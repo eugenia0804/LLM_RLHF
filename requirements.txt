@@ -1,0 +1,22 @@
+# Core ML / DL
+torch
+transformers
+datasets
+
+# Data manipulation
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+tqdm
+
+# Utilities / system standard library
+argparse  
+os         
+json      
+random    
+
+# API clients
+openai

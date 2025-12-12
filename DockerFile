@@ -1,0 +1,32 @@
+FROM python:3.11-slim
+
+# Set environment variables
+# OpenAI API key will be passed at runtime or build time
+ENV OPENAI_API_KEY=""
+
+WORKDIR /app
+
+# Installation
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+# Train the reward model
+# CMD ["python", "datapipeline_reward.py"]
+# CMD ["python", "train_reward.py"]
+
+# RLHF Runs
+# CMD ["python", "datapipeline_rlhf.py"]
+# CMD ["python", "train_ppo.py"]
+# CMD ["python", "train_grpo.py"]
+# CMD ["python", "train_dpo.py"]
+
+# Result Analysis
+# WORKDIR /app/evaluations
+# CMD ["python", "generate_response.py"]
+# CMD ["python", "gpt4_as_judge.py"]
+# CMD ["python", "show_results.py"]
+
+
