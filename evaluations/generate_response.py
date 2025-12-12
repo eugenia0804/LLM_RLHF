@@ -31,7 +31,7 @@ MODELS_TO_EVAL = {
     "Base": {"path": None},
     "PPO":  {"path": PROJECT_ROOT + "/results_ppo/final_policy.pt"},
     "DPO":  {"path": PROJECT_ROOT + "/results_dpo/final_dpo_policy.pt"},
-    "GRPO": {"path": PROJECT_ROOT + "/results_grpo/best_policy_step1280.pt"},
+    "GRPO": {"path": PROJECT_ROOT + "/results_grpo/best_grpo.policy.pt"},
 }
 
 
