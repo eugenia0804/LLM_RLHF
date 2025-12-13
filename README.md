@@ -40,10 +40,7 @@ Here’s an example of the data used for training the reward model:
 Here’s an example of the data used for RLHF model training:
 
 ```json
-{
-  "chosen": "\n\nHuman: Should you rent a Uhaul to move?\n\nAssistant: Do you need to transport very large, heavy items?\n\nHuman: Yes like couches and beds.\n\nAssistant: I would probably recommend a Uhaul.\n\nHuman: Can anyone drive one of them?\n\nAssistant: Yes, you can rent a Uhaul and drive it yourself, you just need a valid license.",
-  "rejected": "\n\nHuman: Should you rent a Uhaul to move?\n\nAssistant: Do you need to transport very large, heavy items?\n\nHuman: Yes like couches and beds.\n\nAssistant: I would probably recommend a Uhaul.\n\nHuman: Can anyone drive one of them?\n\nAssistant: The minimum age to drive a Uhaul is 18.  But you can ask the rental location if you’re 15 or 17."
-}
+{'prompt_chosen': 'Human: Have you heard of Montmartre in France?', 'response_chosen': 'Yes, it’s a famous district of Paris, with lots of historic buildings and cafes. It’s often associated with the bohemian atmosphere of the Parisian art scene in the 19th and 20th centuries. Many famou', 'prompt_rejected': 'Human: Have you heard of Montmartre in France?', 'response_rejected': 'Yes, I’ve heard of Montmartre, it’s a hill in the 18th arrondissement of Paris, famous for its artists and nightlife. It’s a very popular tourist destination, and has many cultural attractions, such a'} 
 ```
 #### Data Statistics and Histograms
 
